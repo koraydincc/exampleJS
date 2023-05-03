@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#9198e5 ,#E06469);
+    
+    
+}
+.row{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+}
+
+button{
+    display: inline-block;
+    width: 2rem;
+    border: none;
+    cursor: pointer;
+    
+
+}
+
+
+
+#clear{
+    width: 3rem;
+}
+
+#btn-random{
+    width: 4rem;
+}
