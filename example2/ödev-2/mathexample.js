@@ -80,6 +80,13 @@ document.getElementById('btn-random').addEventListener('click', function() {
 
     let val1 = parseInt(document.getElementById('inp-no').value);
 
+    if (val1 == '') //ÇALIŞMIYOR 
+    {
+       alert('Tüm Alanları Doldurunuz!');
+       return;   
+    }
+
+
 
     let val2 = Math.floor(Math.random() * 10); 
 
@@ -90,8 +97,15 @@ document.getElementById('btn-random').addEventListener('click', function() {
 
 document.getElementById('btn-kok').addEventListener('click', function(){
 
+  
     let val1 = Math.floor(Math.sqrt(document.getElementById('inp-no').value));
-    
+
+    if (val1 =='') {  
+        alert('Lütfen Sayı Giriniz')
+        return;
+        
+    }
+
     document.getElementById('result').innerHTML = `Sonuç = ${val1}`
 
 
