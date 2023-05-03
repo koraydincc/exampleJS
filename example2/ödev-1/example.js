@@ -13,6 +13,13 @@ document.getElementById('btn-kaydet').addEventListener('click', function () {
     let val2 = document.getElementById('inpiki').value;
 
 
+    
+    if (val1 === '') {
+        alert('Lütfen Alanları Doldurunuz!')
+        return; //Kodun geri kalanını çalıştırmaz
+    }
+
+
     document.getElementById('inpbir').value = '';
 
     document.getElementById('inpiki').value = '';
