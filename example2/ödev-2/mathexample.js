@@ -1,4 +1,6 @@
 
+
+
 document.getElementById('btn-topla').addEventListener('click', function(){
 
     let val1 = document.getElementById('inp-no').value;
@@ -95,6 +97,8 @@ document.getElementById('btn-random').addEventListener('click', function() {
     document.getElementById('result').innerHTML = `Sonuç = ${sonuc}, Random Sayınız = ${val2}`;
 });
 
+sayac=0;
+
 document.getElementById('btn-kok').addEventListener('click', function(){
 
   
@@ -106,7 +110,11 @@ document.getElementById('btn-kok').addEventListener('click', function(){
         
     }
 
-    document.getElementById('result').innerHTML = `Sonuç = ${val1}`
+    
+    sayac += val1;       
+    
+
+    document.getElementById('result').innerHTML = `Sonuç = ${sayac}`
 
 
 
